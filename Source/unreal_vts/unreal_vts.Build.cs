@@ -8,6 +8,16 @@ public class unreal_vts : ModuleRules
 	{
 		PCHUsage = PCHUsageMode.UseExplicitOrSharedPCHs;
 
-		PublicDependencyModuleNames.AddRange(new string[] { "Core", "CoreUObject", "Engine", "InputCore", "HeadMountedDisplay", "EnhancedInput", "ImGui" });
+		PublicDependencyModuleNames.AddRange(new string[] {
+			"Core", 
+			"CoreUObject", 
+			"Engine",
+			"InputCore",
+			"HeadMountedDisplay", 
+			"EnhancedInput", 
+			"ImGui",
+			"HTTP",
+			"JSON"
+		});
 	}
 }

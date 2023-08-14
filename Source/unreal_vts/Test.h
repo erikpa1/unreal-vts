@@ -12,4 +12,7 @@ class UNREAL_VTS_API Test
 public:
 	Test();
 	~Test();
+
+	void MyFunction();
+
 };
