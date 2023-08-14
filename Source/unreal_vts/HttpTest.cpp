@@ -20,6 +20,8 @@ void AHttpTest::BeginPlay()
 	Super::BeginPlay();
 
 	FHttpRequestRef req = FHttpModule::Get().CreateRequest();
+
+
 	req->OnProcessRequestComplete().BindUObject(this, &AHttpTest::OnResponseReceived);
 	req->SetURL("https://jsonplaceholder.typicode.com/posts/1");
 	req->SetVerb("GET");
